@@ -16,4 +16,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: whoami
-    - run: sudo -u ubuntu -i whoami
+    - run: sudo -u root -i whoami
