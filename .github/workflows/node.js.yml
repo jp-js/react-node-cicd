@@ -18,6 +18,6 @@ jobs:
     - run: sudo npm install
     - run: pwd
     - run: sudo su 
-    - run: cd frontend
+    - run: sudo cd frontend
     - run: pwd
     - run: sudo npm install
