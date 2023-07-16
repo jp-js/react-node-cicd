@@ -9,7 +9,6 @@ function App() {
     useEffect(() => {
       getName();
     }, []);
-
     const getName = async () => {
       const response = await axios.get("/names");
       console.log(response);
