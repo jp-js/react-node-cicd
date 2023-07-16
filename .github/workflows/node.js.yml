@@ -23,3 +23,6 @@ jobs:
     - name: make build
       run: npm run build
       working-directory: ./frontend
+    - run: pm2 stop 0
+    - run: pm2 start 0
+    - run: sudo service nginx restart
