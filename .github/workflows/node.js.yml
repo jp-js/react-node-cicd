@@ -17,3 +17,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: whoami
     - run: sudo -u root -i whoami
+    - run: pwd
+    - run: cd frontend
+    - run: pwd
