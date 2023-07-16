@@ -15,7 +15,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: sudo npm i
+    - run: npm i
     - run: cd frontend
-    - run: sudo npm i
-    - run: sudo npm run build
+    - run: npm i
+    - run: npm run build
