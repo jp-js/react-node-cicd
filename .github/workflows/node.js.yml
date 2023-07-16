@@ -17,6 +17,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: sudo npm install
     - run: pwd
-    - run: sudo cd frontend
+    - run: cd frontend
     - run: pwd
     - run: sudo npm install
