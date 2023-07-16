@@ -5,7 +5,6 @@ import axios from "axios";
 function App() {
 
     const [userName, setUsername] = useState('');
-
     useEffect(() => {
       getName();
     }, []);
