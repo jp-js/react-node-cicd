@@ -15,7 +15,7 @@ function App() {
     }
 
     return(
-      <h1>My website name is {userName}</h1>
+      <h1>My name is {userName}</h1>
     );
   }
 

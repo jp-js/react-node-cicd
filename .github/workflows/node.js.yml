@@ -16,13 +16,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm cache clean --force
-    - name: Install dependencies
-      run: npm install
-      working-directory: ./frontend
-    - name: make build
-      run: npm run build
-      working-directory: ./frontend
+    # - run: npm cache clean --force
+    # - name: Install dependencies
+    #   run: npm install
+    #   working-directory: ./frontend
+    # - name: make build
+    #   run: npm run build
+    #   working-directory: ./frontend
     - run: pm2 stop 0
     - run: pm2 start 0
     - run: sudo service nginx restart
