@@ -15,9 +15,5 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: sudo npm install
-    - run: pwd
-    - run: sudo su 
-    - run: sudo cd frontend
-    - run: pwd
-    - run: sudo npm install
+    - run: whoami
+    - run: sudo -u ubuntu -i whoami
