@@ -23,6 +23,9 @@ jobs:
     - name: make build
       run: npm run build --if-present
       working-directory: ./frontend
+    - name: clear npm cache
+      run: npm cache clean --force
+      working-directory: ./frontend
     - run: pm2 stop 0
     - run: pm2 start 0
     - run: pm2 save
