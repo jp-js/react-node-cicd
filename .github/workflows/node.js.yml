@@ -13,14 +13,13 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '16'
         cache: 'npm'
-    - run: npm ci    
-    - run: npm install
+    - run: npm ci
     - run: npm cache clean --force
-    - name: Install dependencies
-      run: npm install
-      working-directory: ./frontend
+    # - name: Install dependencies
+    #   run: npm ci
+    #   working-directory: ./frontend
     - name: make build
       run: npm run build --if-present
       working-directory: ./frontend
