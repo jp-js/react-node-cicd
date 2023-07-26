@@ -18,14 +18,14 @@ jobs:
         cache: 'npm'
     - run: sudo npm ci    
     - run: sudo npm install
-    - run: sudo npm cache clean --force
-    - name: Install dependencies
-      run: sudo npm install
-      working-directory: ./frontend
-    - name: make build
-      run: sudo npm run build --if-present
-      working-directory: ./frontend
-    - run: sudo pm2 stop 0
-    - run: sudo pm2 start 0
-    - run: sudo pm2 save
-    - run: sudo service nginx restart
+    # - run: sudo npm cache clean --force
+    # - name: Install dependencies
+    #   run: sudo npm install
+    #   working-directory: ./frontend
+    # - name: make build
+    #   run: sudo npm run build --if-present
+    #   working-directory: ./frontend
+    # - run: sudo pm2 stop 0
+    # - run: sudo pm2 start 0
+    # - run: sudo pm2 save
+    # - run: sudo service nginx restart
