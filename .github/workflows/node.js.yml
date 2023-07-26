@@ -14,10 +14,8 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: sudo npm ci    
-    - run: sudo npm install
+        node-version: ${{ matrix.node-version }}   
+    - run: npm install
     # - run: sudo npm cache clean --force
     # - name: Install dependencies
     #   run: sudo npm install
