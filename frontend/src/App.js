@@ -13,7 +13,6 @@ function App() {
       console.log(response);
       setUsername(response.data);
     }
-
     return(
       <h1>My name is {userName}</h1>
     );
